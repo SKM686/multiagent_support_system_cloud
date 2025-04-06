@@ -1,0 +1,162 @@
+[
+    {
+      "conversation_id": "TECH_001",
+      "category": "Technical Support",
+      "sentiment": "Frustrated",
+      "priority": "High",
+      "dialogue": [
+        {
+          "sender": "Customer",
+          "message": "Hi there! I’ve been trying to install the latest update for your design software for hours. It keeps failing at 75% with an ‘unknown error.’ What’s wrong?"
+        },
+        {
+          "sender": "Agent",
+          "message": "Hello! Thank you for reaching out. Let me help troubleshoot. Could you share a screenshot of the error message and confirm your operating system version?"
+        },
+        {
+          "sender": "Customer",
+          "message": "Sure, it’s Windows 11. Here’s the screenshot: [image link]. I’ve restarted twice, same issue."
+        },
+        {
+          "sender": "Agent",
+          "message": "This is a known conflict with third-party antivirus tools. Could you temporarily disable your antivirus and retry? I’ll also send a direct download link as a workaround."
+        },
+        {
+          "sender": "Customer",
+          "message": "Oh, disabling the antivirus worked! Installation completed. Thanks for your help!"
+        },
+        {
+          "sender": "Agent",
+          "message": "You’re welcome! Let us know if you need further assistance. Have a great day!"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TECH_005",
+      "category": "Technical Support",
+      "sentiment": "Urgent",
+      "priority": "Critical",
+      "dialogue": [
+        {
+          "sender": "Customer",
+          "message": "Hi, this is urgent! Your API is rejecting our payment gateway integration. Error: ‘Invalid SSL certificate.’ Our cert is valid and up-to-date!"
+        },
+        {
+          "sender": "Agent",
+          "message": "Could you share the output from openssl s_client -connect yourgateway.com:443?"
+        },
+        {
+          "sender": "Customer",
+          "message": "Here’s the terminal output: [text]. See? No errors here."
+        },
+        {
+          "sender": "Agent",
+          "message": "Our system requires TLS 1.3, but your server supports only up to TLS 1.2. Upgrading the protocol will resolve the authentication error."
+        },
+        {
+          "sender": "Customer",
+          "message": "Upgrading worked! Thanks for the quick fix!"
+        },
+        {
+          "sender": "Agent",
+          "message": "Happy to help! Don’t hesitate to reach out for future issues."
+        }
+      ]
+    },
+    {
+      "conversation_id": "TECH_003",
+      "category": "Technical Support",
+      "sentiment": "Annoyed",
+      "priority": "Critical",
+      "dialogue": [
+        {
+          "sender": "Customer",
+          "message": "Hi, I’m really frustrated. Your smart home app crashes every time I try to connect my older thermostat model. It worked fine on my old phone!"
+        },
+        {
+          "sender": "Agent",
+          "message": "Could you confirm your phone model and app version?"
+        },
+        {
+          "sender": "Customer",
+          "message": "iPhone 15, app version 5.2.1. The thermostat is Model HT-2019."
+        },
+        {
+          "sender": "Agent",
+          "message": "Unfortunately, HT-2019 isn’t supported in versions after 5.0. We can roll back your app to 4.9 or offer a discount on a compatible thermostat. What works best for you?"
+        },
+        {
+          "sender": "Customer",
+          "message": "I’ll take the discount, but this is disappointing."
+        },
+        {
+          "sender": "Agent",
+          "message": "I’ll email the discount code shortly. We appreciate your patience!"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TECH_004",
+      "category": "Technical Support",
+      "sentiment": "Anxious",
+      "priority": "High",
+      "dialogue": [
+        {
+          "sender": "Customer",
+          "message": "Hello! My project data isn’t syncing between my laptop and tablet. Changes on one device don’t show up on the other. Can you help?"
+        },
+        {
+          "sender": "Agent",
+          "message": "Are both devices logged into the same account? Could you share the sync logs?"
+        },
+        {
+          "sender": "Customer",
+          "message": "Yes, same account. Here’s a log from my tablet: [file attached]."
+        },
+        {
+          "sender": "Agent",
+          "message": "The log shows a corrupted sync token. I’ll reset it manually. Go to Settings > Sync > Force Full Sync and wait 10 minutes."
+        },
+        {
+          "sender": "Customer",
+          "message": "It’s syncing now! Will this happen again?"
+        },
+        {
+          "sender": "Agent",
+          "message": "A patch releasing next week will prevent this issue. Thanks for your patience!"
+        }
+      ]
+    },
+    {
+      "conversation_id": "TECH_002",
+      "category": "Technical Support",
+      "sentiment": "Confused",
+      "priority": "Medium",
+      "dialogue": [
+        {
+          "sender": "Customer",
+          "message": "Good morning! I’m having an issue where my app keeps saying ‘no internet connection,’ but my Wi-Fi is working fine. Other apps load normally."
+        },
+        {
+          "sender": "Agent",
+          "message": "Let’s check the app’s network permissions. Go to Settings > Apps > [App Name] > Permissions. Is ‘Local Network’ enabled?"
+        },
+        {
+          "sender": "Customer",
+          "message": "Hmm, it was off! I just turned it on, but still no luck."
+        },
+        {
+          "sender": "Agent",
+          "message": "Please clear the app cache: Settings > Storage > Clear Cache. Then log in again. Does that help?"
+        },
+        {
+          "sender": "Customer",
+          "message": "That fixed it! Thank you! Any idea why this happened suddenly?"
+        },
+        {
+          "sender": "Agent",
+          "message": "A recent update may have reset permissions. We’ll flag this to our dev team."
+        }
+      ]
+    }
+  ]
