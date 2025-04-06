@@ -1,7 +1,7 @@
 import sqlite3
 from utils.ollama_client import query_ollama
 
-DB_PATH = 'db/support_tickets.db'
+DB_PATH = 'data/support_tickets.db'
 
 def recommend_resolution(category, sentiment, priority):
     """
